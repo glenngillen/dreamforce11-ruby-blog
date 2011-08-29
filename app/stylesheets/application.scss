@@ -1,0 +1,25 @@
+@import "compass_twitter_bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
+#header {
+  @extend .topbar;
+
+  h1 {
+    @extend h3;
+    color: #fff;
+  }
+
+  ul.menu {
+  }
+}
+
+#main {
+  @extend .span11;
+}
+
+#sidebar {
+  @extend .span5;
+}

@@ -1,0 +1,16 @@
+%html
+  %head
+    %title= [@title, "Dreamforce '11 Demo Blog"].compact.join(" | ")
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'jquery', 'application'
+    = yield_content :include
+  %body
+    #header
+      .fill
+        .container
+          %h1
+            %a{ :href => "/" } Dreamforce '11 Demo Blog
+    .container
+      .row
+        #main
+          = yield
