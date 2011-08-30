@@ -10,6 +10,8 @@
         .container
           %h1
             %a{ :href => "/" } Dreamforce '11 Demo Blog
+          %ul.menu
+            %li{ :class => @about ? "active" : nil }= link_to 'About', url_for(:about)
     .container
       .row
         #main
